@@ -29,7 +29,7 @@ function ListarLibros(Libros)
 {
     let textoAlerta = "Libros disponibles (Titulo, Autor) :\n\n";
     Libros.forEach(libro => {
-        textoAlerta += MostrarLibro(libro) + "\n";
+        textoAlerta += `${libros.indexOf(libro) + 1} - ${MostrarLibro(libro)}. \n`;
     });
 
     alert(textoAlerta);
