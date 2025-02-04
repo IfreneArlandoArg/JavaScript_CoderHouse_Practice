@@ -38,7 +38,8 @@ function ListarLibros(Libros)
 
 
 let libros = [
-    {Autor : "J.K. Rowling", Titulo :"Harry Potter"}
+    {Autor : "J.K. Rowling", Titulo :"Harry Potter"},
+    {Autor : "K.P. Wes", Titulo :"¿ \"Dormir bien\" sinonimo de mejorar la salud mental y fisica ?"}
 ];
 
 
