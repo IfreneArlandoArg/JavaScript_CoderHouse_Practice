@@ -22,12 +22,12 @@ function UsuarioAgregarLibro()
 
 function MostrarLibro(Libro)
 {
-    return `Autor : ${Libro.Autor}, Titulo : ${Libro.Titulo}.`;   
+    return `${Libro.Titulo}, ${Libro.Autor}.`;   
 }
 
 function ListarLibros(Libros)
 {
-    let textoAlerta = "";
+    let textoAlerta = "Libros disponibles (Titulo, Autor) :\n\n";
     Libros.forEach(libro => {
         textoAlerta += MostrarLibro(libro) + "\n";
     });
