@@ -36,6 +36,14 @@ function ListarLibros(Libros)
 
 }
 
+//Menu
+//const FnMenu = function(){prompt(`Elige Opereción :\n1 - Agregar Libro. \n2 - Listar Libros. \n3 - Salir..`);}
+
+//ParseInt Opción menu elegido
+function OpcionMenu()
+{ 
+   return parseInt(prompt(`Elige Opereción :\n1 - Agregar Libro. \n2 - Listar Libros. \n3 - Salir..`));
+}
 
 let libros = [
     {Autor : "J.K. Rowling", Titulo :"Harry Potter"},
@@ -43,9 +51,10 @@ let libros = [
 ];
 
 
+console.log(OpcionMenu());
 
-
-let menu = parseInt(prompt(`Elige Opereción :\n1 - Agregar Libro. \n2 - Listar Libros. \n3 - Salir..`));
+//Refactorización 1...
+let menu = OpcionMenu();
 
 
 while (menu !== 3) {
@@ -66,7 +75,7 @@ while (menu !== 3) {
     }
 
 
-
-    menu = parseInt(prompt(`Elige Opereción :\n1 - Agregar Libro. \n2 - Listar Libros. \n3 - Salir..`)); 
+    //Refactorización 1...
+    menu = OpcionMenu(); 
 
 }
