@@ -36,8 +36,6 @@ function ListarLibros(Libros)
 
 }
 
-//Menu
-//const FnMenu = function(){prompt(`Elige Opereción :\n1 - Agregar Libro. \n2 - Listar Libros. \n3 - Salir..`);}
 
 //ParseInt Opción menu elegido
 function OpcionMenu()
@@ -51,7 +49,7 @@ let libros = [
 ];
 
 
-console.log(OpcionMenu());
+
 
 //Refactorización 1...
 let menu = OpcionMenu();
@@ -73,6 +71,7 @@ while (menu !== 3) {
 
     
     }
+
 
 
     //Refactorización 1...
