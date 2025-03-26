@@ -39,8 +39,22 @@ function createDiv(data){
            data.forEach(item => {
             appendElementtoBlock(productsContainer, createDiv(item));
            });
+
+           Swal.fire({
+            title: "Data loaded successfully!",
+            icon: "success",
+            draggable: true,
+            theme: "dark"
+          });
     }
     else{
         console.log("No data available");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "No data found!",
+            theme: "dark"
+            
+          });
     }
   });
